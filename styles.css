@@ -1,0 +1,181 @@
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #0c0f1a;
+  color: white;
+  line-height: 1.6;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10%;
+  background: #0c0f1a;
+  transition: background-color 0.5s ease;
+}
+
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #fff;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: color 0.5s ease;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.login-btn {
+  background: #09ffef;
+  border: 1px solid #0c0f1a;
+  color: rgb(20, 6, 78);
+  padding: 10px 30px;
+  border-radius: 20px;
+  cursor: pointer;
+  margin: 0 16px;
+  transition: background 0.3s ease, color 0.3s ease, border 0.3s ease,
+    box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.login-btn:hover {
+  background: black;
+  color: #09ffef;
+  border: 1px solid #09ffef;
+  box-shadow: 0 0 10px #09ffef;
+  transform: scale(1.05);
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5% 10%;
+  flex-wrap: wrap;
+  background: linear-gradient(135deg, #0c0f1a 60%, #47b2ff 60%);
+  transition: background 0.5s ease;
+}
+
+.hero-text {
+  flex: 1 1 500px;
+  max-width: 600px;
+}
+
+.subheading {
+  color: #47b2ff;
+  margin-bottom: 10px;
+  font-weight: 600;
+  transition: color 0.5s ease;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.description {
+  margin-bottom: 20px;
+  font-size: 0.95rem;
+}
+
+.features li {
+  margin-bottom: 10px;
+  list-style: none;
+}
+
+.deploy-btn {
+  background-color: #ff5f1f;
+  padding: 15px 90px;
+  border: none;
+  border-radius: 25px;
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: background 0.3s ease, border 0.7s ease, box-shadow 0.3s ease;
+}
+
+.deploy-btn:hover {
+  background-color: #000000;
+  border: 1px solid #ff5f1f;
+  box-shadow: 0 0 10px #dfa608;
+}
+
+.hero-image img {
+  max-width: 500px;
+  width: 100%;
+  height: auto;
+}
+
+.moon {
+  cursor: pointer;
+  transition: transform 0.8s ease-in, filter 0.3s ease;
+  margin-left: 15px;
+}
+
+.moon:hover {
+  transform: rotate(360deg);
+}
+
+/* Light mode styles */
+body.light-mode {
+  background-color: #ffffff;
+  color: #111111;
+}
+
+body.light-mode .navbar {
+  background: #ffffff;
+}
+
+body.light-mode .navbar a {
+  color: #111111;
+}
+
+body.light-mode .logo {
+  color: #111111;
+}
+
+body.light-mode .login-btn {
+  background: #000000;
+  color: #09ffef;
+  border-color: #09ffef;
+}
+
+body.light-mode .login-btn:hover {
+  background: #09ffef;
+  color: #000000;
+}
+
+body.light-mode .hero {
+  background: linear-gradient(135deg, #ffffff 60%, #b3e5ff 60%);
+}
+
+body.light-mode .subheading {
+  color: #0077cc;
+}
+
+body.light-mode .moon {
+  filter: drop-shadow(0 0 5px #ffaa00);
+}
